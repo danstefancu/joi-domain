@@ -17,7 +17,7 @@ describe('joiDomainValidator (joi-domain.spec.ts)', () => {
 
     it('should validate domain with umlaut', async () => {
         let d = Joi.domain();
-        let {error} = d.validate('cr-umzüge-transporte.de')
+        let {error} = d.validate('münchen.de')
 
         expect(error).to.be.undefined;
 
@@ -25,10 +25,10 @@ describe('joiDomainValidator (joi-domain.spec.ts)', () => {
 
     it('should return punnycode value for domain with umlaut', async () => {
         let d = Joi.domain();
-        let {error, value} = d.validate('cr-umzüge-transporte.de')
+        let {error, value} = d.validate('münchen.de')
 
         expect(error).to.be.undefined;
-        expect(value).to.equal('xn--cr-umzge-transporte-bbc.de');
+        expect(value).to.equal('xn--mnchen-3ya.de');
 
     });
 
