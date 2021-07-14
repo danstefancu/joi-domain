@@ -1,6 +1,7 @@
 test
 src
 tsconfig.json
+.editorconfig
 .gitattributes
 .nycrc
 .husky

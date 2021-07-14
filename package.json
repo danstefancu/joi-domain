@@ -1,5 +1,5 @@
 {
-    "name": "joi-domain-validator",
+    "name": "joi-domain",
     "version": "1.0.0",
     "description": "Full domain validation with punny code conversion and icann tld validation",
     "main": "dist/joi-domain.js",
@@ -18,7 +18,9 @@
         "url": "git+https://github.com/danstefancu/joi-domain.git"
     },
     "keywords": [
-        "joi", "domain", "validation"
+        "joi",
+        "domain",
+        "validation"
     ],
     "author": "Dan Stefancu <d.stefancu@rankingcoach.com>",
     "license": "MIT",
